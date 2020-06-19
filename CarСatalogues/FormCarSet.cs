@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace CarСatalogues
 {
-    public partial class MainForm : Form
+    public partial class FormCarSet : Form
     {
-        public MainForm()
+        public FormCarSet()
         {
             InitializeComponent();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

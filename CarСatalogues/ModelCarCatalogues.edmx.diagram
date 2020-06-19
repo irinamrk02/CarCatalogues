@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="99fd0210b42a4962b8d4d901e9503c68" Name="Diagram1">
+        <EntityTypeShape EntityType="TradeSoftModel.Automaker" Width="1.5" PointX="2.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeSoftModel.AutopartSet" Width="1.5" PointX="4.625" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeSoftModel.CarSet" Width="1.5" PointX="0.875" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeSoftModel.ClientSet" Width="1.5" PointX="8.375" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeSoftModel.OrderSet" Width="1.5" PointX="6.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeSoftModel.Shops" Width="1.5" PointX="4.625" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TradeSoftModel.Users" Width="1.5" PointX="2.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="TradeSoftModel.FK_AutopartSet_Automaker" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeSoftModel.FK_CarSet_Automaker" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeSoftModel.FK_AutopartSet_CarSet" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeSoftModel.FK_ClientSet_AutopartSet" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeSoftModel.FK_OrderSet_AutopartSet" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeSoftModel.FK_Shops_AutopartSet" ManuallyRouted="false" />
+        <AssociationConnector Association="TradeSoftModel.FK_OrderSet_ClientSet" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

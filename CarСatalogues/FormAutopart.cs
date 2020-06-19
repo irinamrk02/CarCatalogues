@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CarСatalogues
 {
-    public partial class MainForm : Form
+    public partial class FormAutopart : Form
     {
-        public MainForm()
+        public FormAutopart()
         {
             InitializeComponent();
         }

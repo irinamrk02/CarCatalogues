@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace CarСatalogues
 {
-    public partial class MainForm : Form
+    public partial class FormAdmin : Form
     {
-        public MainForm()
+        public FormAdmin()
         {
             InitializeComponent();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
