@@ -44,6 +44,7 @@
             this.textBoxShop = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.buttonDel.BackColor = System.Drawing.SystemColors.HotTrack;
             this.buttonDel.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDel.Location = new System.Drawing.Point(600, 199);
+            this.buttonDel.Location = new System.Drawing.Point(603, 206);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(170, 55);
             this.buttonDel.TabIndex = 31;
@@ -65,7 +66,7 @@
             this.buttonEdit.BackColor = System.Drawing.SystemColors.HotTrack;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEdit.Location = new System.Drawing.Point(99, 199);
+            this.buttonEdit.Location = new System.Drawing.Point(102, 206);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(170, 55);
             this.buttonEdit.TabIndex = 30;
@@ -78,7 +79,7 @@
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.buttonAdd.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAdd.Location = new System.Drawing.Point(347, 199);
+            this.buttonAdd.Location = new System.Drawing.Point(350, 206);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(170, 55);
             this.buttonAdd.TabIndex = 29;
@@ -97,10 +98,10 @@
             this.listViewShops.FullRowSelect = true;
             this.listViewShops.GridLines = true;
             this.listViewShops.HideSelection = false;
-            this.listViewShops.Location = new System.Drawing.Point(27, 283);
+            this.listViewShops.Location = new System.Drawing.Point(27, 290);
             this.listViewShops.MultiSelect = false;
             this.listViewShops.Name = "listViewShops";
-            this.listViewShops.Size = new System.Drawing.Size(810, 282);
+            this.listViewShops.Size = new System.Drawing.Size(835, 282);
             this.listViewShops.TabIndex = 28;
             this.listViewShops.UseCompatibleStateImageBehavior = false;
             this.listViewShops.View = System.Windows.Forms.View.Details;
@@ -130,45 +131,45 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(618, 35);
+            this.label5.Location = new System.Drawing.Point(626, 46);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 29);
+            this.label5.Size = new System.Drawing.Size(131, 29);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Запчасть";
+            this.label5.Text = "Запчасть *";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(355, 35);
+            this.label1.Location = new System.Drawing.Point(355, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(230, 29);
+            this.label1.Size = new System.Drawing.Size(246, 29);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Название магазина";
+            this.label1.Text = "Название магазина *";
             // 
             // comboBoxAutopart
             // 
             this.comboBoxAutopart.Font = new System.Drawing.Font("Roboto Light", 13.8F);
             this.comboBoxAutopart.FormattingEnabled = true;
-            this.comboBoxAutopart.Location = new System.Drawing.Point(623, 66);
+            this.comboBoxAutopart.Location = new System.Drawing.Point(631, 77);
             this.comboBoxAutopart.Name = "comboBoxAutopart";
-            this.comboBoxAutopart.Size = new System.Drawing.Size(214, 36);
+            this.comboBoxAutopart.Size = new System.Drawing.Size(231, 36);
             this.comboBoxAutopart.TabIndex = 21;
             // 
             // textBoxAddress
             // 
             this.textBoxAddress.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAddress.Location = new System.Drawing.Point(136, 133);
+            this.textBoxAddress.Location = new System.Drawing.Point(118, 139);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(701, 35);
+            this.textBoxAddress.Size = new System.Drawing.Size(744, 35);
             this.textBoxAddress.TabIndex = 19;
             // 
             // textBoxShop
             // 
             this.textBoxShop.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShop.Location = new System.Drawing.Point(360, 67);
+            this.textBoxShop.Location = new System.Drawing.Point(360, 77);
             this.textBoxShop.Name = "textBoxShop";
-            this.textBoxShop.Size = new System.Drawing.Size(214, 35);
+            this.textBoxShop.Size = new System.Drawing.Size(241, 35);
             this.textBoxShop.TabIndex = 18;
             // 
             // pictureBox1
@@ -185,18 +186,30 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(22, 139);
+            this.label6.Location = new System.Drawing.Point(22, 145);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 29);
+            this.label6.Size = new System.Drawing.Size(100, 29);
             this.label6.TabIndex = 33;
-            this.label6.Text = "Адрес:";
+            this.label6.Text = "Адрес: *";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.DarkRed;
+            this.label2.Location = new System.Drawing.Point(405, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(335, 23);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "* - поля обязательные к заполнению";
             // 
             // FormShops
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(860, 577);
+            this.ClientSize = new System.Drawing.Size(896, 588);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
@@ -235,5 +248,6 @@
         private System.Windows.Forms.TextBox textBoxShop;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
     }
 }

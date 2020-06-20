@@ -47,6 +47,7 @@
             this.textBoxCountry = new System.Windows.Forms.TextBox();
             this.textBoxBrand = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             this.buttonDel.BackColor = System.Drawing.SystemColors.HotTrack;
             this.buttonDel.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDel.Location = new System.Drawing.Point(720, 480);
+            this.buttonDel.Location = new System.Drawing.Point(720, 471);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(170, 55);
             this.buttonDel.TabIndex = 31;
@@ -68,7 +69,7 @@
             this.buttonEdit.BackColor = System.Drawing.SystemColors.HotTrack;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEdit.Location = new System.Drawing.Point(513, 480);
+            this.buttonEdit.Location = new System.Drawing.Point(513, 471);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(170, 55);
             this.buttonEdit.TabIndex = 30;
@@ -81,7 +82,7 @@
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.buttonAdd.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAdd.Location = new System.Drawing.Point(21, 481);
+            this.buttonAdd.Location = new System.Drawing.Point(21, 471);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(170, 55);
             this.buttonAdd.TabIndex = 29;
@@ -101,10 +102,10 @@
             this.listViewCar.FullRowSelect = true;
             this.listViewCar.GridLines = true;
             this.listViewCar.HideSelection = false;
-            this.listViewCar.Location = new System.Drawing.Point(350, 43);
+            this.listViewCar.Location = new System.Drawing.Point(360, 46);
             this.listViewCar.MultiSelect = false;
             this.listViewCar.Name = "listViewCar";
-            this.listViewCar.Size = new System.Drawing.Size(540, 416);
+            this.listViewCar.Size = new System.Drawing.Size(530, 404);
             this.listViewCar.TabIndex = 28;
             this.listViewCar.UseCompatibleStateImageBehavior = false;
             this.listViewCar.View = System.Windows.Forms.View.Details;
@@ -112,18 +113,18 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "id автомобиля";
-            this.columnHeader1.Width = 148;
+            this.columnHeader1.Text = "id";
+            this.columnHeader1.Width = 50;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Марка";
-            this.columnHeader2.Width = 79;
+            this.columnHeader2.Width = 110;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Страна";
-            this.columnHeader3.Width = 84;
+            this.columnHeader3.Width = 120;
             // 
             // columnHeader4
             // 
@@ -133,23 +134,23 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "Год";
-            this.columnHeader5.Width = 54;
+            this.columnHeader5.Width = 66;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(16, 309);
+            this.label5.Location = new System.Drawing.Point(16, 308);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 29);
+            this.label5.Size = new System.Drawing.Size(198, 29);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Производитель";
+            this.label5.Text = "Производитель *";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(16, 392);
+            this.label4.Location = new System.Drawing.Point(16, 383);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 29);
             this.label4.TabIndex = 26;
@@ -159,27 +160,27 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(16, 141);
+            this.label3.Location = new System.Drawing.Point(16, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(225, 29);
+            this.label3.Size = new System.Drawing.Size(241, 29);
             this.label3.TabIndex = 25;
-            this.label3.Text = "Марка автомобиля";
+            this.label3.Text = "Марка автомобиля *";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(16, 222);
+            this.label1.Location = new System.Drawing.Point(16, 233);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 29);
+            this.label1.Size = new System.Drawing.Size(108, 29);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Страна";
+            this.label1.Text = "Страна *";
             // 
             // comboBoxAutoMaker
             // 
             this.comboBoxAutoMaker.Font = new System.Drawing.Font("Roboto Light", 13.8F);
             this.comboBoxAutoMaker.FormattingEnabled = true;
-            this.comboBoxAutoMaker.Location = new System.Drawing.Point(21, 341);
+            this.comboBoxAutoMaker.Location = new System.Drawing.Point(21, 340);
             this.comboBoxAutoMaker.Name = "comboBoxAutoMaker";
             this.comboBoxAutoMaker.Size = new System.Drawing.Size(289, 36);
             this.comboBoxAutoMaker.TabIndex = 21;
@@ -187,7 +188,7 @@
             // textBoxYear
             // 
             this.textBoxYear.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxYear.Location = new System.Drawing.Point(21, 424);
+            this.textBoxYear.Location = new System.Drawing.Point(21, 415);
             this.textBoxYear.Name = "textBoxYear";
             this.textBoxYear.Size = new System.Drawing.Size(289, 35);
             this.textBoxYear.TabIndex = 20;
@@ -195,7 +196,7 @@
             // textBoxCountry
             // 
             this.textBoxCountry.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCountry.Location = new System.Drawing.Point(21, 254);
+            this.textBoxCountry.Location = new System.Drawing.Point(21, 265);
             this.textBoxCountry.Name = "textBoxCountry";
             this.textBoxCountry.Size = new System.Drawing.Size(289, 35);
             this.textBoxCountry.TabIndex = 19;
@@ -203,7 +204,7 @@
             // textBoxBrand
             // 
             this.textBoxBrand.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBrand.Location = new System.Drawing.Point(21, 173);
+            this.textBoxBrand.Location = new System.Drawing.Point(21, 195);
             this.textBoxBrand.Name = "textBoxBrand";
             this.textBoxBrand.Size = new System.Drawing.Size(289, 35);
             this.textBoxBrand.TabIndex = 18;
@@ -218,12 +219,24 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.DarkRed;
+            this.label2.Location = new System.Drawing.Point(8, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(335, 23);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "* - поля обязательные к заполнению";
+            // 
             // FormCarSet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(920, 548);
+            this.ClientSize = new System.Drawing.Size(920, 542);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
@@ -267,5 +280,6 @@
         private System.Windows.Forms.TextBox textBoxCountry;
         private System.Windows.Forms.TextBox textBoxBrand;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -68,28 +68,46 @@ namespace CarСatalogues
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-            CarSet car = new CarSet();
-            car.CarBrand = textBoxBrand.Text;
-            car.Country = textBoxCountry.Text;
-            car.IdAutomaker = Convert.ToInt32(comboBoxAutoMaker.SelectedItem.ToString().Split('.')[0]);
-            car.Year = textBoxYear.Text;
-            Program.catalog.CarSet.Add(car);
-            Program.catalog.SaveChanges();
-            ShowCar();
+            try
+            {
+                CarSet car = new CarSet();
+                if (textBoxBrand.Text == "" || textBoxCountry.Text == "" || comboBoxAutoMaker.SelectedItem == null)
+                { throw new Exception("Обязательные данные не заполнены"); }
+                else
+                {
+                    car.CarBrand = textBoxBrand.Text;
+                    car.Country = textBoxCountry.Text;
+                    car.IdAutomaker = Convert.ToInt32(comboBoxAutoMaker.SelectedItem.ToString().Split('.')[0]);
+                }
+                car.Year = textBoxYear.Text;
+                Program.catalog.CarSet.Add(car);
+                Program.catalog.SaveChanges();
+                ShowCar();
+            }
+            catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
-            if (listViewCar.SelectedItems.Count == 1)
+            try
             {
-                CarSet car = listViewCar.SelectedItems[0].Tag as CarSet;
-                car.CarBrand = textBoxBrand.Text;
-                car.Country = textBoxCountry.Text;
-                car.IdAutomaker = Convert.ToInt32(comboBoxAutoMaker.SelectedItem.ToString().Split('.')[0]);
-                car.Year = textBoxYear.Text;
+                if (listViewCar.SelectedItems.Count == 1)
+                {
+                    CarSet car = listViewCar.SelectedItems[0].Tag as CarSet;
+                    if (textBoxBrand.Text == "" || textBoxCountry.Text == "" || comboBoxAutoMaker.SelectedItem == null)
+                    { throw new Exception("Обязательные данные не заполнены"); }
+                    else
+                    {
+                        car.CarBrand = textBoxBrand.Text;
+                        car.Country = textBoxCountry.Text;
+                        car.IdAutomaker = Convert.ToInt32(comboBoxAutoMaker.SelectedItem.ToString().Split('.')[0]);
+                    }
+                    car.Year = textBoxYear.Text;
+                }
+                Program.catalog.SaveChanges();
+                ShowCar();
             }
-            Program.catalog.SaveChanges();
-            ShowCar();
+            catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ButtonDel_Click(object sender, EventArgs e)

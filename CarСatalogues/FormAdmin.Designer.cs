@@ -34,7 +34,6 @@
             this.buttonMaker = new System.Windows.Forms.Button();
             this.buttonShops = new System.Windows.Forms.Button();
             this.buttonClients = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -105,19 +104,6 @@
             this.buttonClients.UseVisualStyleBackColor = false;
             this.buttonClients.Click += new System.EventHandler(this.ButtonClients_Click);
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button6.Font = new System.Drawing.Font("Roboto Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button6.Location = new System.Drawing.Point(6, 495);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(360, 65);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "Заказы";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CarСatalogues.Properties.Resources.header_ru;
@@ -147,9 +133,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(371, 574);
+            this.ClientSize = new System.Drawing.Size(371, 498);
             this.Controls.Add(this.buttonBack);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.buttonClients);
             this.Controls.Add(this.buttonShops);
             this.Controls.Add(this.buttonMaker);
@@ -173,7 +158,6 @@
         private System.Windows.Forms.Button buttonMaker;
         private System.Windows.Forms.Button buttonShops;
         private System.Windows.Forms.Button buttonClients;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button buttonBack;
     }
 }

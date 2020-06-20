@@ -35,24 +35,36 @@ namespace CarСatalogues
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-            Automaker maker = new Automaker();
-            maker.NameAutomaker = textBoxAutoMaker.Text;
-            maker.Country = textBoxCountry.Text;
-            Program.catalog.Automaker.Add(maker);
-            Program.catalog.SaveChanges();
-            ShowAutoMaker();
+            try
+            {
+                Automaker maker = new Automaker();
+                if (textBoxAutoMaker.Text == "")
+                { throw new Exception("Обязательные данные не заполнены"); }
+                else maker.NameAutomaker = textBoxAutoMaker.Text;
+                maker.Country = textBoxCountry.Text;
+                Program.catalog.Automaker.Add(maker);
+                Program.catalog.SaveChanges();
+                ShowAutoMaker();
+            }
+            catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
-            if (listViewAutomaker.SelectedItems.Count == 1)
+            try
             {
-                Automaker maker = listViewAutomaker.SelectedItems[0].Tag as Automaker;
-                maker.NameAutomaker = textBoxAutoMaker.Text;
-                maker.Country = textBoxCountry.Text;
+                if (listViewAutomaker.SelectedItems.Count == 1)
+                {
+                    Automaker maker = listViewAutomaker.SelectedItems[0].Tag as Automaker;
+                    if (textBoxAutoMaker.Text == "")
+                    { throw new Exception("Обязательные данные не заполнены"); }
+                    else maker.NameAutomaker = textBoxAutoMaker.Text;
+                    maker.Country = textBoxCountry.Text;
+                }
                 Program.catalog.SaveChanges();
                 ShowAutoMaker();
             }
+            catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ButtonDel_Click(object sender, EventArgs e)

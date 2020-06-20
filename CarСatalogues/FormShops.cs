@@ -49,28 +49,44 @@ namespace CarСatalogues
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-            Shops shop = new Shops();
-            shop.NameShop = textBoxShop.Text;
-            shop.Address = textBoxAddress.Text;
-            shop.IdAutopart = Convert.ToInt32(comboBoxAutopart.SelectedItem.ToString().Split('.')[0]);
-            Program.catalog.Shops.Add(shop);
-            Program.catalog.SaveChanges();
-            ShowShop();
+            try
+            {
+                Shops shop = new Shops();
+                if (textBoxShop.Text == "" || textBoxAddress.Text == "" || comboBoxAutopart.SelectedItem == null)
+                { throw new Exception("Обязательные данные не заполнены"); }
+                else
+                {
+                    shop.NameShop = textBoxShop.Text;
+                    shop.Address = textBoxAddress.Text;
+                    shop.IdAutopart = Convert.ToInt32(comboBoxAutopart.SelectedItem.ToString().Split('.')[0]);
+                }
+                Program.catalog.Shops.Add(shop);
+                Program.catalog.SaveChanges();
+                ShowShop();
+            }
+            catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
-            if (listViewShops.SelectedItems.Count == 1)
+            try
             {
-                Shops shop = listViewShops.SelectedItems[0].Tag as Shops;
-                shop.NameShop = textBoxShop.Text;
-                shop.Address = textBoxAddress.Text;
-                shop.IdAutopart = Convert.ToInt32(comboBoxAutopart.SelectedItem.ToString().Split('.')[0]);
-                shop.AutopartSet.Quantity = Convert.ToInt32(comboBoxAutopart.SelectedItem.ToString().Split('.')[0]);
-                shop.AutopartSet.Price = Convert.ToInt32(comboBoxAutopart.SelectedItem.ToString().Split('.')[0]);
+                if (listViewShops.SelectedItems.Count == 1)
+                {
+                    Shops shop = listViewShops.SelectedItems[0].Tag as Shops;
+                    if (textBoxShop.Text == "" || textBoxAddress.Text == "" || comboBoxAutopart.SelectedItem == null)
+                    { throw new Exception("Обязательные данные не заполнены"); }
+                    else
+                    {
+                        shop.NameShop = textBoxShop.Text;
+                        shop.Address = textBoxAddress.Text;
+                        shop.IdAutopart = Convert.ToInt32(comboBoxAutopart.SelectedItem.ToString().Split('.')[0]);
+                    }
+                }
+                    Program.catalog.SaveChanges();
+                    ShowShop();
             }
-            Program.catalog.SaveChanges();
-            ShowShop();
+            catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ButtonDel_Click(object sender, EventArgs e)

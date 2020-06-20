@@ -59,30 +59,50 @@ namespace CarСatalogues
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-            AutopartSet autopart = new AutopartSet();
-            autopart.NameAutopart = textBoxAutoPart.Text;
-            autopart.IdAutomaker = Convert.ToInt32(comboBoxAutoMaker.SelectedItem.ToString().Split('.')[0]);
-            autopart.IdCar = Convert.ToInt32(comboBoxCar.SelectedItem.ToString().Split('.')[0]);
-            autopart.Quantity = Convert.ToInt32(textBoxKol.Text);
-            autopart.Price = Convert.ToInt32(textBoxPrice.Text);
-            Program.catalog.AutopartSet.Add(autopart);
-            Program.catalog.SaveChanges();
-            ShowAutoPart();
+            try
+            {
+                AutopartSet autopart = new AutopartSet();
+                if (textBoxAutoPart.Text == "" || textBoxKol.Text == "" || textBoxPrice.Text == "" ||
+                    comboBoxAutoMaker.SelectedItem == null || comboBoxCar.SelectedItem == null)
+                { throw new Exception("Обязательные данные не заполнены"); }
+                else
+                {
+                    autopart.NameAutopart = textBoxAutoPart.Text;
+                    autopart.Quantity = Convert.ToInt32(textBoxKol.Text);
+                    autopart.Price = Convert.ToInt32(textBoxPrice.Text);
+                    autopart.IdAutomaker = Convert.ToInt32(comboBoxAutoMaker.SelectedItem.ToString().Split('.')[0]);
+                    autopart.IdCar = Convert.ToInt32(comboBoxCar.SelectedItem.ToString().Split('.')[0]);
+                }
+                Program.catalog.AutopartSet.Add(autopart);
+                Program.catalog.SaveChanges();
+                ShowAutoPart();
+            }
+            catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
-            if (listViewAutopart.SelectedItems.Count == 1)
+            try
             {
-                AutopartSet autopart = listViewAutopart.Items[0].Tag as AutopartSet;
-                autopart.NameAutopart = textBoxAutoPart.Text;
-                autopart.IdAutomaker = Convert.ToInt32(comboBoxAutoMaker.SelectedItem.ToString().Split('.')[0]);
-                autopart.IdCar = Convert.ToInt32(comboBoxCar.SelectedItem.ToString().Split('.')[0]);
-                autopart.Quantity = Convert.ToInt32(textBoxKol.Text);
-                autopart.Price = Convert.ToInt32(textBoxPrice.Text);
+                if (listViewAutopart.SelectedItems.Count == 1)
+                {
+                    AutopartSet autopart = listViewAutopart.Items[0].Tag as AutopartSet;
+                    if (textBoxAutoPart.Text == "" || textBoxKol.Text == "" || textBoxPrice.Text == "" ||
+                    comboBoxAutoMaker.SelectedItem == null || comboBoxCar.SelectedItem == null)
+                    { throw new Exception("Обязательные данные не заполнены"); }
+                    else
+                    {
+                        autopart.NameAutopart = textBoxAutoPart.Text;
+                        autopart.Quantity = Convert.ToInt32(textBoxKol.Text);
+                        autopart.Price = Convert.ToInt32(textBoxPrice.Text);
+                        autopart.IdAutomaker = Convert.ToInt32(comboBoxAutoMaker.SelectedItem.ToString().Split('.')[0]);
+                        autopart.IdCar = Convert.ToInt32(comboBoxCar.SelectedItem.ToString().Split('.')[0]);
+                    }
+                }
+                Program.catalog.SaveChanges();
+                ShowAutoPart();
             }
-            Program.catalog.SaveChanges();
-            ShowAutoPart();
+            catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
         }
 
         private void ButtonDel_Click(object sender, EventArgs e)

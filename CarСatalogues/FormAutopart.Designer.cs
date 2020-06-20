@@ -50,6 +50,7 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +67,7 @@
             // textBoxAutoPart
             // 
             this.textBoxAutoPart.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAutoPart.Location = new System.Drawing.Point(370, 70);
+            this.textBoxAutoPart.Location = new System.Drawing.Point(370, 74);
             this.textBoxAutoPart.Name = "textBoxAutoPart";
             this.textBoxAutoPart.Size = new System.Drawing.Size(238, 35);
             this.textBoxAutoPart.TabIndex = 3;
@@ -74,7 +75,7 @@
             // textBoxKol
             // 
             this.textBoxKol.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxKol.Location = new System.Drawing.Point(370, 155);
+            this.textBoxKol.Location = new System.Drawing.Point(370, 159);
             this.textBoxKol.Name = "textBoxKol";
             this.textBoxKol.Size = new System.Drawing.Size(238, 35);
             this.textBoxKol.TabIndex = 4;
@@ -82,7 +83,7 @@
             // textBoxPrice
             // 
             this.textBoxPrice.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPrice.Location = new System.Drawing.Point(654, 154);
+            this.textBoxPrice.Location = new System.Drawing.Point(654, 158);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(238, 35);
             this.textBoxPrice.TabIndex = 5;
@@ -91,7 +92,7 @@
             // 
             this.comboBoxAutoMaker.Font = new System.Drawing.Font("Roboto Light", 13.8F);
             this.comboBoxAutoMaker.FormattingEnabled = true;
-            this.comboBoxAutoMaker.Location = new System.Drawing.Point(654, 70);
+            this.comboBoxAutoMaker.Location = new System.Drawing.Point(654, 74);
             this.comboBoxAutoMaker.Name = "comboBoxAutoMaker";
             this.comboBoxAutoMaker.Size = new System.Drawing.Size(238, 36);
             this.comboBoxAutoMaker.TabIndex = 6;
@@ -100,7 +101,7 @@
             // 
             this.comboBoxCar.Font = new System.Drawing.Font("Roboto Light", 13.8F);
             this.comboBoxCar.FormattingEnabled = true;
-            this.comboBoxCar.Location = new System.Drawing.Point(25, 154);
+            this.comboBoxCar.Location = new System.Drawing.Point(25, 157);
             this.comboBoxCar.Name = "comboBoxCar";
             this.comboBoxCar.Size = new System.Drawing.Size(307, 36);
             this.comboBoxCar.TabIndex = 7;
@@ -109,51 +110,51 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(365, 38);
+            this.label1.Location = new System.Drawing.Point(365, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 29);
+            this.label1.Size = new System.Drawing.Size(181, 29);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Автозапчасть";
+            this.label1.Text = "Автозапчасть *";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(20, 122);
+            this.label2.Location = new System.Drawing.Point(20, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 29);
+            this.label2.Size = new System.Drawing.Size(165, 29);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Автомобиль";
+            this.label2.Text = "Автомобиль *";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(365, 123);
+            this.label3.Location = new System.Drawing.Point(365, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 29);
+            this.label3.Size = new System.Drawing.Size(158, 29);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Количество";
+            this.label3.Text = "Количество *";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(649, 122);
+            this.label4.Location = new System.Drawing.Point(649, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 29);
+            this.label4.Size = new System.Drawing.Size(84, 29);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Цена";
+            this.label4.Text = "Цена *";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(649, 38);
+            this.label5.Location = new System.Drawing.Point(649, 42);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 29);
+            this.label5.Size = new System.Drawing.Size(198, 29);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Производитель";
+            this.label5.Text = "Производитель *";
             // 
             // listViewAutopart
             // 
@@ -168,7 +169,7 @@
             this.listViewAutopart.FullRowSelect = true;
             this.listViewAutopart.GridLines = true;
             this.listViewAutopart.HideSelection = false;
-            this.listViewAutopart.Location = new System.Drawing.Point(25, 290);
+            this.listViewAutopart.Location = new System.Drawing.Point(25, 295);
             this.listViewAutopart.MultiSelect = false;
             this.listViewAutopart.Name = "listViewAutopart";
             this.listViewAutopart.Size = new System.Drawing.Size(867, 282);
@@ -179,8 +180,8 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "id автозапчасти";
-            this.columnHeader1.Width = 171;
+            this.columnHeader1.Text = "id ";
+            this.columnHeader1.Width = 58;
             // 
             // columnHeader2
             // 
@@ -205,13 +206,14 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Цена";
+            this.columnHeader6.Width = 87;
             // 
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.buttonAdd.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAdd.Location = new System.Drawing.Point(385, 211);
+            this.buttonAdd.Location = new System.Drawing.Point(385, 217);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(170, 55);
             this.buttonAdd.TabIndex = 14;
@@ -224,7 +226,7 @@
             this.buttonEdit.BackColor = System.Drawing.SystemColors.HotTrack;
             this.buttonEdit.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonEdit.Location = new System.Drawing.Point(137, 211);
+            this.buttonEdit.Location = new System.Drawing.Point(137, 217);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(170, 55);
             this.buttonEdit.TabIndex = 15;
@@ -237,7 +239,7 @@
             this.buttonDel.BackColor = System.Drawing.SystemColors.HotTrack;
             this.buttonDel.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
             this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDel.Location = new System.Drawing.Point(638, 211);
+            this.buttonDel.Location = new System.Drawing.Point(638, 217);
             this.buttonDel.Name = "buttonDel";
             this.buttonDel.Size = new System.Drawing.Size(170, 55);
             this.buttonDel.TabIndex = 16;
@@ -245,12 +247,24 @@
             this.buttonDel.UseVisualStyleBackColor = false;
             this.buttonDel.Click += new System.EventHandler(this.ButtonDel_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.DarkRed;
+            this.label6.Location = new System.Drawing.Point(463, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(335, 23);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "* - поля обязательные к заполнению";
+            // 
             // FormAutopart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(923, 605);
+            this.ClientSize = new System.Drawing.Size(915, 596);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonDel);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonAdd);
@@ -299,5 +313,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonEdit;
         private System.Windows.Forms.Button buttonDel;
+        private System.Windows.Forms.Label label6;
     }
 }
