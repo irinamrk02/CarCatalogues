@@ -103,5 +103,17 @@ namespace CarСatalogues
         {
             
         }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonBack_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            main.Show();
+            this.Hide();
+        }
     }
 }

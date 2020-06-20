@@ -34,8 +34,9 @@
             this.buttonMaker = new System.Windows.Forms.Button();
             this.buttonShops = new System.Windows.Forms.Button();
             this.buttonClients = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonOrder = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,17 +105,6 @@
             this.buttonClients.UseVisualStyleBackColor = false;
             this.buttonClients.Click += new System.EventHandler(this.ButtonClients_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CarСatalogues.Properties.Resources.header_ru;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(353, 112);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
             // buttonBack
             // 
             this.buttonBack.BackColor = System.Drawing.Color.White;
@@ -128,12 +118,37 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.ButtonBack_Click);
             // 
+            // buttonOrder
+            // 
+            this.buttonOrder.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonOrder.Font = new System.Drawing.Font("Roboto Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonOrder.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonOrder.Location = new System.Drawing.Point(5, 496);
+            this.buttonOrder.Name = "buttonOrder";
+            this.buttonOrder.Size = new System.Drawing.Size(360, 65);
+            this.buttonOrder.TabIndex = 10;
+            this.buttonOrder.Text = "Заказы";
+            this.buttonOrder.UseVisualStyleBackColor = false;
+            this.buttonOrder.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CarСatalogues.Properties.Resources.header_ru;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(353, 112);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(371, 498);
+            this.ClientSize = new System.Drawing.Size(371, 568);
+            this.Controls.Add(this.buttonOrder);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonClients);
             this.Controls.Add(this.buttonShops);
@@ -159,5 +174,6 @@
         private System.Windows.Forms.Button buttonShops;
         private System.Windows.Forms.Button buttonClients;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button buttonOrder;
     }
 }
