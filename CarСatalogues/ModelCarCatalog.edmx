@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NameAutomaker" Type="nvarchar(max)" />
           <Property Name="Country" Type="nvarchar(max)" />
         </EntityType>
@@ -58,18 +58,14 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NameShop" Type="nvarchar(max)" />
           <Property Name="Address" Type="nvarchar(max)" />
-          <Property Name="IdAutopart" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdAutopart" Type="int" Nullable="false" />
         </EntityType>
-        <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "TradeSoft.dbo.Users" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="Id" />
-            <PropertyRef Name="Login" />
-            <PropertyRef Name="Password" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
@@ -166,13 +162,7 @@
           <EntitySet Name="ClientSet" EntityType="Self.ClientSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="OrderSet" EntityType="Self.OrderSet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Shops" EntityType="Self.Shops" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Users" EntityType="Self.Users" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Users].[Id] AS [Id], 
-    [Users].[Login] AS [Login], 
-    [Users].[Password] AS [Password]
-    FROM [dbo].[Users] AS [Users]</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_AutopartSet_Automaker" Association="Self.FK_AutopartSet_Automaker">
             <End Role="Automaker" EntitySet="Automaker" />
             <End Role="AutopartSet" EntitySet="AutopartSet" />
@@ -211,7 +201,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NameAutomaker" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="AutopartSet" Relationship="Self.FK_AutopartSet_Automaker" FromRole="Automaker" ToRole="AutopartSet" />
@@ -273,17 +263,15 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NameShop" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="IdAutopart" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdAutopart" Type="Int32" Nullable="false" />
           <NavigationProperty Name="AutopartSet" Relationship="Self.FK_Shops_AutopartSet" FromRole="Shops" ToRole="AutopartSet" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="Id" />
-            <PropertyRef Name="Login" />
-            <PropertyRef Name="Password" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
@@ -373,7 +361,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="TradeSoftEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="TradeSoftEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Automaker" EntityType="Self.Automaker" />
           <EntitySet Name="AutopartSet" EntityType="Self.AutopartSet" />
           <EntitySet Name="CarSet" EntityType="Self.CarSet" />
@@ -415,7 +403,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище TradeSoftModelContainer" CdmEntityContainer="TradeSoftEntities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище TradeSoftModelContainer" CdmEntityContainer="TradeSoftEntities1">
           <EntitySetMapping Name="Automaker">
             <EntityTypeMapping TypeName="TradeSoftModel.Automaker">
               <MappingFragment StoreEntitySet="Automaker">

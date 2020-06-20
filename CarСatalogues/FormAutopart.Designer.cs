@@ -30,26 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAutopart));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBoxAutoPart = new System.Windows.Forms.TextBox();
+            this.textBoxKol = new System.Windows.Forms.TextBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.comboBoxAutoMaker = new System.Windows.Forms.ComboBox();
+            this.comboBoxCar = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewAutopart = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonDel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,47 +63,47 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // textBoxAutoPart
             // 
-            this.textBox1.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(370, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(238, 35);
-            this.textBox1.TabIndex = 3;
+            this.textBoxAutoPart.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAutoPart.Location = new System.Drawing.Point(370, 70);
+            this.textBoxAutoPart.Name = "textBoxAutoPart";
+            this.textBoxAutoPart.Size = new System.Drawing.Size(238, 35);
+            this.textBoxAutoPart.TabIndex = 3;
             // 
-            // textBox2
+            // textBoxKol
             // 
-            this.textBox2.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(370, 155);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 35);
-            this.textBox2.TabIndex = 4;
+            this.textBoxKol.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxKol.Location = new System.Drawing.Point(370, 155);
+            this.textBoxKol.Name = "textBoxKol";
+            this.textBoxKol.Size = new System.Drawing.Size(238, 35);
+            this.textBoxKol.TabIndex = 4;
             // 
-            // textBox3
+            // textBoxPrice
             // 
-            this.textBox3.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(654, 154);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(238, 35);
-            this.textBox3.TabIndex = 5;
+            this.textBoxPrice.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPrice.Location = new System.Drawing.Point(654, 154);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(238, 35);
+            this.textBoxPrice.TabIndex = 5;
             // 
-            // comboBox1
+            // comboBoxAutoMaker
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Roboto Light", 13.8F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(654, 70);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(238, 36);
-            this.comboBox1.TabIndex = 6;
+            this.comboBoxAutoMaker.Font = new System.Drawing.Font("Roboto Light", 13.8F);
+            this.comboBoxAutoMaker.FormattingEnabled = true;
+            this.comboBoxAutoMaker.Location = new System.Drawing.Point(654, 70);
+            this.comboBoxAutoMaker.Name = "comboBoxAutoMaker";
+            this.comboBoxAutoMaker.Size = new System.Drawing.Size(238, 36);
+            this.comboBoxAutoMaker.TabIndex = 6;
             // 
-            // comboBox2
+            // comboBoxCar
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Roboto Light", 13.8F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(25, 154);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(307, 36);
-            this.comboBox2.TabIndex = 7;
+            this.comboBoxCar.Font = new System.Drawing.Font("Roboto Light", 13.8F);
+            this.comboBoxCar.FormattingEnabled = true;
+            this.comboBoxCar.Location = new System.Drawing.Point(25, 154);
+            this.comboBoxCar.Name = "comboBoxCar";
+            this.comboBoxCar.Size = new System.Drawing.Size(307, 36);
+            this.comboBoxCar.TabIndex = 7;
             // 
             // label1
             // 
@@ -155,31 +155,32 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Производитель";
             // 
-            // listView1
+            // listViewAutopart
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewAutopart.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
-            this.listView1.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(25, 290);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(867, 282);
-            this.listView1.TabIndex = 13;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewAutopart.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewAutopart.FullRowSelect = true;
+            this.listViewAutopart.GridLines = true;
+            this.listViewAutopart.HideSelection = false;
+            this.listViewAutopart.Location = new System.Drawing.Point(25, 290);
+            this.listViewAutopart.MultiSelect = false;
+            this.listViewAutopart.Name = "listViewAutopart";
+            this.listViewAutopart.Size = new System.Drawing.Size(867, 282);
+            this.listViewAutopart.TabIndex = 13;
+            this.listViewAutopart.UseCompatibleStateImageBehavior = false;
+            this.listViewAutopart.View = System.Windows.Forms.View.Details;
+            this.listViewAutopart.SelectedIndexChanged += new System.EventHandler(this.ListViewAutopart_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "id автозапчасти";
-            this.columnHeader1.Width = 164;
+            this.columnHeader1.Width = 171;
             // 
             // columnHeader2
             // 
@@ -188,8 +189,8 @@
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Автопроизводитель";
-            this.columnHeader3.Width = 201;
+            this.columnHeader3.Text = "Производитель";
+            this.columnHeader3.Width = 171;
             // 
             // columnHeader4
             // 
@@ -205,41 +206,44 @@
             // 
             this.columnHeader6.Text = "Цена";
             // 
-            // button1
+            // buttonAdd
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(385, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 55);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Создать";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonAdd.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonAdd.Location = new System.Drawing.Point(385, 211);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(170, 55);
+            this.buttonAdd.TabIndex = 14;
+            this.buttonAdd.Text = "Создать";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
-            // button2
+            // buttonEdit
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(137, 211);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 55);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Изменить";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonEdit.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonEdit.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonEdit.Location = new System.Drawing.Point(137, 211);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(170, 55);
+            this.buttonEdit.TabIndex = 15;
+            this.buttonEdit.Text = "Изменить";
+            this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
-            // button3
+            // buttonDel
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button3.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(638, 211);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 55);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Удалить";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonDel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonDel.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonDel.Location = new System.Drawing.Point(638, 211);
+            this.buttonDel.Name = "buttonDel";
+            this.buttonDel.Size = new System.Drawing.Size(170, 55);
+            this.buttonDel.TabIndex = 16;
+            this.buttonDel.Text = "Удалить";
+            this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.ButtonDel_Click);
             // 
             // FormAutopart
             // 
@@ -247,23 +251,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(923, 605);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.buttonDel);
+            this.Controls.Add(this.buttonEdit);
+            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.listViewAutopart);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBoxCar);
+            this.Controls.Add(this.comboBoxAutoMaker);
+            this.Controls.Add(this.textBoxPrice);
+            this.Controls.Add(this.textBoxKol);
+            this.Controls.Add(this.textBoxAutoPart);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAutopart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Автомобиль";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -274,25 +279,25 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBoxAutoPart;
+        private System.Windows.Forms.TextBox textBoxKol;
+        private System.Windows.Forms.TextBox textBoxPrice;
+        private System.Windows.Forms.ComboBox comboBoxAutoMaker;
+        private System.Windows.Forms.ComboBox comboBoxCar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewAutopart;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.Button buttonDel;
     }
 }

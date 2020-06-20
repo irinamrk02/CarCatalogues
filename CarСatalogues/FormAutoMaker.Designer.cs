@@ -29,38 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAutoMaker));
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewAutomaker = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxCountry = new System.Windows.Forms.TextBox();
+            this.textBoxAutoMaker = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonDel = new System.Windows.Forms.Button();
+            this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // listView1
+            // listViewAutomaker
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewAutomaker.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(7, 289);
-            this.listView1.MultiSelect = false;
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(625, 217);
-            this.listView1.TabIndex = 34;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewAutomaker.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listViewAutomaker.FullRowSelect = true;
+            this.listViewAutomaker.GridLines = true;
+            this.listViewAutomaker.HideSelection = false;
+            this.listViewAutomaker.Location = new System.Drawing.Point(7, 289);
+            this.listViewAutomaker.MultiSelect = false;
+            this.listViewAutomaker.Name = "listViewAutomaker";
+            this.listViewAutomaker.Size = new System.Drawing.Size(625, 217);
+            this.listViewAutomaker.TabIndex = 34;
+            this.listViewAutomaker.UseCompatibleStateImageBehavior = false;
+            this.listViewAutomaker.View = System.Windows.Forms.View.Details;
+            this.listViewAutomaker.SelectedIndexChanged += new System.EventHandler(this.ListViewAutomaker_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -97,67 +98,70 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "Страна";
             // 
-            // textBox2
+            // textBoxCountry
             // 
-            this.textBox2.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(342, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(269, 35);
-            this.textBox2.TabIndex = 31;
+            this.textBoxCountry.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCountry.Location = new System.Drawing.Point(342, 148);
+            this.textBoxCountry.Name = "textBoxCountry";
+            this.textBoxCountry.Size = new System.Drawing.Size(269, 35);
+            this.textBoxCountry.TabIndex = 31;
             // 
-            // textBox1
+            // textBoxAutoMaker
             // 
-            this.textBox1.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(31, 148);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 35);
-            this.textBox1.TabIndex = 30;
+            this.textBoxAutoMaker.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAutoMaker.Location = new System.Drawing.Point(31, 148);
+            this.textBoxAutoMaker.Name = "textBoxAutoMaker";
+            this.textBoxAutoMaker.Size = new System.Drawing.Size(272, 35);
+            this.textBoxAutoMaker.TabIndex = 30;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CarСatalogues.Properties.Resources.header_ru;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(625, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // buttonDel
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button3.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(456, 207);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 55);
-            this.button3.TabIndex = 37;
-            this.button3.Text = "Удалить";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonDel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonDel.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonDel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonDel.Location = new System.Drawing.Point(456, 207);
+            this.buttonDel.Name = "buttonDel";
+            this.buttonDel.Size = new System.Drawing.Size(170, 55);
+            this.buttonDel.TabIndex = 37;
+            this.buttonDel.Text = "Удалить";
+            this.buttonDel.UseVisualStyleBackColor = false;
+            this.buttonDel.Click += new System.EventHandler(this.ButtonDel_Click);
             // 
-            // button2
+            // buttonEdit
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(14, 207);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 55);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "Изменить";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonEdit.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonEdit.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonEdit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonEdit.Location = new System.Drawing.Point(14, 207);
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Size = new System.Drawing.Size(170, 55);
+            this.buttonEdit.TabIndex = 36;
+            this.buttonEdit.Text = "Изменить";
+            this.buttonEdit.UseVisualStyleBackColor = false;
+            this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
-            // button1
+            // buttonAdd
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(237, 207);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 55);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Создать";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonAdd.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold);
+            this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonAdd.Location = new System.Drawing.Point(237, 207);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(170, 55);
+            this.buttonAdd.TabIndex = 35;
+            this.buttonAdd.Text = "Создать";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // FormAutoMaker
             // 
@@ -165,17 +169,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(638, 518);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.buttonDel);
+            this.Controls.Add(this.buttonEdit);
+            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.listViewAutomaker);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxCountry);
+            this.Controls.Add(this.textBoxAutoMaker);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAutoMaker";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Производители";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -185,17 +190,17 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewAutomaker;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxCountry;
+        private System.Windows.Forms.TextBox textBoxAutoMaker;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonDel;
+        private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.Button buttonAdd;
     }
 }

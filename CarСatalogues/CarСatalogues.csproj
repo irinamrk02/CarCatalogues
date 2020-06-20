@@ -56,22 +56,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Automaker.cs">
-      <DependentUpon>ModelCarCatalogues.tt</DependentUpon>
+      <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
     <Compile Include="AutopartSet.cs">
-      <DependentUpon>ModelCarCatalogues.tt</DependentUpon>
+      <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
     <Compile Include="CarSet.cs">
-      <DependentUpon>ModelCarCatalogues.tt</DependentUpon>
+      <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientSet.cs">
-      <DependentUpon>ModelCarCatalogues.tt</DependentUpon>
+      <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAdmin.cs">
       <SubType>Form</SubType>
@@ -97,34 +97,52 @@
     <Compile Include="FormCarSet.Designer.cs">
       <DependentUpon>FormCarSet.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModelCarCatalogues.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelCarCatalogues.Context.tt</DependentUpon>
+    <Compile Include="FormClientSet.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModelCarCatalogues.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelCarCatalogues.tt</DependentUpon>
+    <Compile Include="FormClientSet.Designer.cs">
+      <DependentUpon>FormClientSet.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModelCarCatalogues.Designer.cs">
+    <Compile Include="FormOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrder.Designer.cs">
+      <DependentUpon>FormOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShops.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShops.Designer.cs">
+      <DependentUpon>FormShops.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelCarCatalog.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelCarCatalogues.edmx</DependentUpon>
+      <DependentUpon>ModelCarCatalog.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelCarCatalog.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelCarCatalog.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelCarCatalog.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelCarCatalog.edmx</DependentUpon>
     </Compile>
     <Compile Include="OrderSet.cs">
-      <DependentUpon>ModelCarCatalogues.tt</DependentUpon>
+      <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shops.cs">
-      <DependentUpon>ModelCarCatalogues.tt</DependentUpon>
+      <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
     <Compile Include="Users.cs">
-      <DependentUpon>ModelCarCatalogues.tt</DependentUpon>
+      <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
@@ -138,6 +156,15 @@
     <EmbeddedResource Include="FormCarSet.resx">
       <DependentUpon>FormCarSet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormClientSet.resx">
+      <DependentUpon>FormClientSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrder.resx">
+      <DependentUpon>FormOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShops.resx">
+      <DependentUpon>FormShops.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -148,12 +175,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EntityDeploy Include="ModelCarCatalogues.edmx">
+    <EntityDeploy Include="ModelCarCatalog.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelCarCatalogues.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModelCarCatalog.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ModelCarCatalogues.edmx.diagram">
-      <DependentUpon>ModelCarCatalogues.edmx</DependentUpon>
+    <None Include="ModelCarCatalog.edmx.diagram">
+      <DependentUpon>ModelCarCatalog.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -176,15 +203,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModelCarCatalogues.Context.tt">
+    <Content Include="ModelCarCatalog.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelCarCatalogues.edmx</DependentUpon>
-      <LastGenOutput>ModelCarCatalogues.Context.cs</LastGenOutput>
+      <DependentUpon>ModelCarCatalog.edmx</DependentUpon>
+      <LastGenOutput>ModelCarCatalog.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ModelCarCatalogues.tt">
+    <Content Include="ModelCarCatalog.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelCarCatalogues.edmx</DependentUpon>
-      <LastGenOutput>ModelCarCatalogues.cs</LastGenOutput>
+      <DependentUpon>ModelCarCatalog.edmx</DependentUpon>
+      <LastGenOutput>ModelCarCatalog.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

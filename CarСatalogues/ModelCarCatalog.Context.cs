@@ -13,10 +13,10 @@ namespace CarСatalogues
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TradeSoftEntities : DbContext
+    public partial class TradeSoftEntities1 : DbContext
     {
-        public TradeSoftEntities()
-            : base("name=TradeSoftEntities")
+        public TradeSoftEntities1()
+            : base("name=TradeSoftEntities1")
         {
         }
     

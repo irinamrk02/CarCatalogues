@@ -8,6 +8,7 @@ namespace CarСatalogues
 {
     static class Program
     {
+        public static TradeSoftEntities1 catalog = new TradeSoftEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
