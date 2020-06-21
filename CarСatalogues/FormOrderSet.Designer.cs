@@ -34,11 +34,11 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxOrder = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonDel = new System.Windows.Forms.Button();
@@ -87,6 +87,11 @@
             this.columnHeader4.Text = "Id запчасти";
             this.columnHeader4.Width = 124;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Запчасть";
+            this.columnHeader5.Width = 108;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -100,9 +105,9 @@
             // 
             this.comboBoxOrder.Font = new System.Drawing.Font("Roboto Light", 13.8F);
             this.comboBoxOrder.FormattingEnabled = true;
-            this.comboBoxOrder.Location = new System.Drawing.Point(96, 186);
+            this.comboBoxOrder.Location = new System.Drawing.Point(20, 186);
             this.comboBoxOrder.Name = "comboBoxOrder";
-            this.comboBoxOrder.Size = new System.Drawing.Size(446, 36);
+            this.comboBoxOrder.Size = new System.Drawing.Size(610, 36);
             this.comboBoxOrder.TabIndex = 51;
             // 
             // pictureBox1
@@ -119,17 +124,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(91, 154);
+            this.label1.Location = new System.Drawing.Point(15, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 29);
             this.label1.TabIndex = 56;
             this.label1.Text = "Клиент + заказ *";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Запчасть";
-            this.columnHeader5.Width = 108;
             // 
             // label10
             // 
@@ -195,6 +194,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOrderSet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Заказы";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

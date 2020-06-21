@@ -67,6 +67,12 @@
     <Compile Include="ClientSet.cs">
       <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
+    <Compile Include="FormAutirization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAutirization.Designer.cs">
+      <DependentUpon>FormAutirization.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOrderSet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     <Compile Include="Users.cs">
       <DependentUpon>ModelCarCatalog.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormAutirization.resx">
+      <DependentUpon>FormAutirization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormOrderSet.resx">
       <DependentUpon>FormOrderSet.cs</DependentUpon>
     </EmbeddedResource>

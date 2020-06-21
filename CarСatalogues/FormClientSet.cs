@@ -42,7 +42,7 @@ namespace CarСatalogues
             comboBoxAutopart.Items.Clear();
             foreach (AutopartSet autopart in Program.catalog.AutopartSet)
             {
-                string[] item = {autopart.Id.ToString() + ".", autopart.NameAutopart,
+                string[] item = {autopart.Id.ToString() + ".", autopart.NameAutopart + " - " +
                 autopart.CarSet.CarBrand};
                 comboBoxAutopart.Items.Add(string.Join(" ", item));
             }

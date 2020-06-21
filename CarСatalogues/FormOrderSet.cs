@@ -15,6 +15,8 @@ namespace CarСatalogues
         public FormOrderSet()
         {
             InitializeComponent();
+            ShowClients();
+            ShowOrder();
         }
 
         void ShowClients()
@@ -22,7 +24,7 @@ namespace CarСatalogues
             comboBoxOrder.Items.Clear();
             foreach (ClientSet client in Program.catalog.ClientSet)
             {
-                string[] item = {client.Id.ToString() + ". ", client.LastName + " "
+                string[] item = {client.Id.ToString() + ".", client.LastName + " "
                  + client.FirstName + " " + client.MiddleName,
                  "Запчасть: " + client.IdAutopart.ToString() + ".", client.AutopartSet.NameAutopart};
                 comboBoxOrder.Items.Add(string.Join(" ", item));
@@ -45,10 +47,6 @@ namespace CarСatalogues
                 listViewOrder.Items.Add(item);
             }
             listViewOrder.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-        }
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ListViewOrder_SelectedIndexChanged(object sender, EventArgs e)
@@ -76,7 +74,9 @@ namespace CarСatalogues
                 if (comboBoxOrder.SelectedItem != null)
                     order.IdClient = Convert.ToInt32(comboBoxOrder.SelectedItem.ToString().Split('.')[0]);
                 else throw new Exception("Обязательные данные не заполнены");
-                               
+                if (comboBoxOrder.SelectedItem != null)
+                    order.IdAutopart = Convert.ToInt32(comboBoxOrder.SelectedItem.ToString().Split('.')[0]);
+                else throw new Exception("Обязательные данные не заполнены");
                 Program.catalog.OrderSet.Add(order);
                 Program.catalog.SaveChanges();
                 ShowOrder();

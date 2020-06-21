@@ -27,9 +27,9 @@ namespace CarСatalogues
             {
                 ListViewItem item = new ListViewItem(new string[]
                 {
-                    autopart.Id.ToString(), autopart.NameAutopart, 
+                    autopart.Id.ToString(), autopart.NameAutopart,
                     autopart.Automaker.NameAutomaker, autopart.CarSet.CarBrand,
-                    autopart.Quantity.ToString(), autopart.Price.ToString() 
+                    autopart.Quantity.ToString(), autopart.Price.ToString()
                 });
                 item.Tag = autopart;
                 listViewAutopart.Items.Add(item);
@@ -42,7 +42,7 @@ namespace CarСatalogues
             comboBoxAutoMaker.Items.Clear();
             foreach (Automaker maker in Program.catalog.Automaker)
             {
-                string[] item = {maker.Id.ToString() + ".", maker.NameAutomaker + " - " +  maker.Country};
+                string[] item = { maker.Id.ToString() + ".", maker.NameAutomaker + " - " + maker.Country };
                 comboBoxAutoMaker.Items.Add(string.Join(" ", item));
             }
         }
@@ -52,7 +52,7 @@ namespace CarСatalogues
             comboBoxCar.Items.Clear();
             foreach (CarSet car in Program.catalog.CarSet)
             {
-                string[] item = {car.Id.ToString() + ".", car.CarBrand };
+                string[] item = { car.Id.ToString() + ".", car.CarBrand };
                 comboBoxCar.Items.Add(string.Join(" ", item));
             }
         }
@@ -130,9 +130,9 @@ namespace CarСatalogues
             {
                 AutopartSet autopart = listViewAutopart.Items[0].Tag as AutopartSet;
                 textBoxAutoPart.Text = autopart.NameAutopart;
-                comboBoxAutoMaker.Text = autopart.IdAutomaker.ToString() + ". "
-                    + autopart.Automaker.NameAutomaker;
-                comboBoxCar.Text = autopart.IdCar + ". " + autopart.CarSet.CarBrand;
+                comboBoxAutoMaker.Text = autopart.IdAutomaker.ToString() + "." + autopart.Automaker.NameAutomaker 
+                    + " - " + autopart.Automaker.Country;
+                comboBoxCar.Text = autopart.IdCar.ToString() + "." + autopart.CarSet.CarBrand;
                 textBoxKol.Text = autopart.Quantity.ToString();
                 textBoxPrice.Text = autopart.Price.ToString();
             }

@@ -55,6 +55,7 @@
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,7 +130,6 @@
             this.label2.Size = new System.Drawing.Size(162, 37);
             this.label2.TabIndex = 46;
             this.label2.Text = "Магазины";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // comboBoxAutopart
             // 
@@ -155,7 +155,8 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5});
             this.listViewShop.Font = new System.Drawing.Font("Roboto Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listViewShop.FullRowSelect = true;
             this.listViewShop.GridLines = true;
@@ -167,7 +168,6 @@
             this.listViewShop.TabIndex = 49;
             this.listViewShop.UseCompatibleStateImageBehavior = false;
             this.listViewShop.View = System.Windows.Forms.View.Details;
-            this.listViewShop.SelectedIndexChanged += new System.EventHandler(this.ListViewShop_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -303,6 +303,10 @@
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.ButtonBack_Click);
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Цена";
+            // 
             // FormOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -368,5 +372,6 @@
         private System.Windows.Forms.TextBox textBoxLastName;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

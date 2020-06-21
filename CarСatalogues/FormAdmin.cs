@@ -59,17 +59,7 @@ namespace CarСatalogues
             this.Hide();
         }
 
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
+        private void ButtonOrder_Click(object sender, EventArgs e)
         {
             FormOrderSet orderSet = new FormOrderSet();
             orderSet.Show();

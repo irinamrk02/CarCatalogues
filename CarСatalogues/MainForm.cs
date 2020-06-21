@@ -21,12 +21,12 @@ namespace CarСatalogues
         {
             FormOrder order = new FormOrder();
             order.Show();
-            this.Hide();
+            
         }
 
         private void ButtonAdmin_Click(object sender, EventArgs e)
         {
-            FormAdmin admin = new FormAdmin();
+            FormAutirization admin = new FormAutirization();
             admin.Show();
             this.Hide();
         }

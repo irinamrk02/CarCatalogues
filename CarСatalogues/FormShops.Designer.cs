@@ -42,9 +42,9 @@
             this.comboBoxAutopart = new System.Windows.Forms.ComboBox();
             this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.textBoxShop = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,7 +131,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(626, 46);
+            this.label5.Location = new System.Drawing.Point(346, 117);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 29);
             this.label5.TabIndex = 27;
@@ -141,7 +141,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(355, 45);
+            this.label1.Location = new System.Drawing.Point(23, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 29);
             this.label1.TabIndex = 23;
@@ -151,42 +151,32 @@
             // 
             this.comboBoxAutopart.Font = new System.Drawing.Font("Roboto Light", 13.8F);
             this.comboBoxAutopart.FormattingEnabled = true;
-            this.comboBoxAutopart.Location = new System.Drawing.Point(631, 77);
+            this.comboBoxAutopart.Location = new System.Drawing.Point(351, 148);
             this.comboBoxAutopart.Name = "comboBoxAutopart";
-            this.comboBoxAutopart.Size = new System.Drawing.Size(231, 36);
+            this.comboBoxAutopart.Size = new System.Drawing.Size(511, 36);
             this.comboBoxAutopart.TabIndex = 21;
             // 
             // textBoxAddress
             // 
             this.textBoxAddress.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAddress.Location = new System.Drawing.Point(118, 139);
+            this.textBoxAddress.Location = new System.Drawing.Point(452, 62);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(744, 35);
+            this.textBoxAddress.Size = new System.Drawing.Size(410, 35);
             this.textBoxAddress.TabIndex = 19;
             // 
             // textBoxShop
             // 
             this.textBoxShop.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxShop.Location = new System.Drawing.Point(360, 77);
+            this.textBoxShop.Location = new System.Drawing.Point(27, 148);
             this.textBoxShop.Name = "textBoxShop";
-            this.textBoxShop.Size = new System.Drawing.Size(241, 35);
+            this.textBoxShop.Size = new System.Drawing.Size(296, 35);
             this.textBoxShop.TabIndex = 18;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CarСatalogues.Properties.Resources.header_ru;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(327, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(22, 145);
+            this.label6.Location = new System.Drawing.Point(346, 68);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 29);
             this.label6.TabIndex = 33;
@@ -197,11 +187,21 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(405, 12);
+            this.label2.Location = new System.Drawing.Point(438, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(335, 23);
             this.label2.TabIndex = 40;
             this.label2.Text = "* - поля обязательные к заполнению";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CarСatalogues.Properties.Resources.header_ru;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(323, 101);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // FormShops
             // 

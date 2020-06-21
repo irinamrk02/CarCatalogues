@@ -36,7 +36,7 @@ namespace CarСatalogues
             comboBoxAutomaker.Items.Clear();
             foreach (Automaker maker in Program.catalog.Automaker)
             {
-                string[] item = { maker.NameAutomaker, maker.Country};
+                string[] item = { maker.NameAutomaker + " - " + maker.Country};
                 comboBoxAutomaker.Items.Add(string.Join(" ", item));
             }
         }
@@ -46,7 +46,8 @@ namespace CarСatalogues
             comboBoxAutopart.Items.Clear();
             foreach (AutopartSet part in Program.catalog.AutopartSet)
             {
-                string[] item = {part.Id.ToString(), part.NameAutopart, part.Price.ToString() };
+                string[] item = {part.Id.ToString() + ".", part.NameAutopart,
+                    "Цена: " + part.Price.ToString() + " р." };
                 comboBoxAutopart.Items.Add(string.Join(" ", item));
             }
         }
@@ -61,7 +62,7 @@ namespace CarСatalogues
                     {
                     shop.Id.ToString(), shop.NameShop, shop.Address,
                     shop.AutopartSet.NameAutopart + " " + shop.AutopartSet.CarSet.CarBrand,
-                    
+                    shop.AutopartSet.Price.ToString()
                     });
                     item.Tag = shop;
                     listViewShop.Items.Add(item);
@@ -87,7 +88,7 @@ namespace CarСatalogues
                     clientSet.IdAutopart = Convert.ToInt32(comboBoxAutopart.SelectedItem.ToString().Split('.')[0]);
                 }
                 clientSet.Email = textBoxEmail.Text;
-                MessageBox.Show("Ваш заказ успешно офоромлен! Книга будет отправленна на почту", "Заказ оформлен",
+                MessageBox.Show("Ваш заказ успешно офоромлен!", "Заказ оформлен",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MainForm formMain = new MainForm();
                 formMain.Show();
@@ -97,16 +98,6 @@ namespace CarСatalogues
                 
             }
             catch (Exception ex) { MessageBox.Show("" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information); }
-        }
-
-        private void ListViewShop_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void ButtonBack_Click(object sender, EventArgs e)

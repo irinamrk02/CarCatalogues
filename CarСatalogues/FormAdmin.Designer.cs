@@ -129,7 +129,7 @@
             this.buttonOrder.TabIndex = 10;
             this.buttonOrder.Text = "Заказы";
             this.buttonOrder.UseVisualStyleBackColor = false;
-            this.buttonOrder.Click += new System.EventHandler(this.Button1_Click);
+            this.buttonOrder.Click += new System.EventHandler(this.ButtonOrder_Click);
             // 
             // pictureBox1
             // 
@@ -140,7 +140,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // FormAdmin
             // 

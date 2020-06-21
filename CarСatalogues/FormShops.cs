@@ -27,8 +27,7 @@ namespace CarСatalogues
                 ListViewItem item = new ListViewItem(new string[]
                 {
                     shop.Id.ToString(), shop.NameShop, shop.Address,
-                    shop.AutopartSet.NameAutopart + " " + shop.AutopartSet.CarSet.CarBrand,
-                    shop.AutopartSet.Quantity.ToString(), shop.AutopartSet.Price.ToString()
+                    shop.AutopartSet.NameAutopart + " " + shop.AutopartSet.CarSet.CarBrand
                 });
                 item.Tag = shop;
                 listViewShops.Items.Add(item);

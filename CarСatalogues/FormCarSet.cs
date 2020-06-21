@@ -27,7 +27,7 @@ namespace CarСatalogues
                 ListViewItem item = new ListViewItem(new string[]
                 {
                     car.Id.ToString(), car.CarBrand, car.Country,
-                    car.Automaker.NameAutomaker + "-" + car.Automaker.Country, car.Year
+                    car.Automaker.NameAutomaker + " - " + car.Automaker.Country, car.Year
                 });
                 item.Tag = car;
                 listViewCar.Items.Add(item);
@@ -41,7 +41,7 @@ namespace CarСatalogues
             foreach (Automaker maker in Program.catalog.Automaker)
             {
                 string[] item = {maker.Id.ToString() + ".", maker.NameAutomaker +
-                        "-" + maker.Country};
+                        " - " + maker.Country};
                 comboBoxAutoMaker.Items.Add(string.Join(" ", item));
             }
         }
@@ -54,7 +54,7 @@ namespace CarСatalogues
                 textBoxBrand.Text = car.CarBrand;
                 textBoxCountry.Text = car.Country;
                 comboBoxAutoMaker.Text = car.IdAutomaker.ToString() + "." +
-                    car.Automaker.NameAutomaker + "-" + car.Automaker.Country;
+                    car.Automaker.NameAutomaker + " - " + car.Automaker.Country;
                 textBoxYear.Text = car.Year;
             }
             else
