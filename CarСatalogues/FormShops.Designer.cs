@@ -159,9 +159,9 @@
             // textBoxAddress
             // 
             this.textBoxAddress.Font = new System.Drawing.Font("Roboto Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAddress.Location = new System.Drawing.Point(452, 62);
+            this.textBoxAddress.Location = new System.Drawing.Point(464, 62);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(410, 35);
+            this.textBoxAddress.Size = new System.Drawing.Size(398, 35);
             this.textBoxAddress.TabIndex = 19;
             // 
             // textBoxShop

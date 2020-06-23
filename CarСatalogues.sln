@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarСatalogues", "CarСatalogues\CarСatalogues.csproj", "{B33DE5FC-DE29-4065-A1EA-469F7BF71776}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAndLoadTestProject", "WebAndLoadTestProject\WebAndLoadTestProject.csproj", "{1368617A-D24A-481C-849C-B7E36B976DD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B49E7180-B8D9-4A0A-91AC-ABC8E017C938}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{B33DE5FC-DE29-4065-A1EA-469F7BF71776}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B33DE5FC-DE29-4065-A1EA-469F7BF71776}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B33DE5FC-DE29-4065-A1EA-469F7BF71776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1368617A-D24A-481C-849C-B7E36B976DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1368617A-D24A-481C-849C-B7E36B976DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1368617A-D24A-481C-849C-B7E36B976DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1368617A-D24A-481C-849C-B7E36B976DD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

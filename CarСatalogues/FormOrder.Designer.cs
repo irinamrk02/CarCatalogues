@@ -43,6 +43,7 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,7 +125,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(563, 52);
+            this.label2.Location = new System.Drawing.Point(563, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 37);
             this.label2.TabIndex = 46;
@@ -137,7 +137,7 @@
             this.comboBoxAutopart.FormattingEnabled = true;
             this.comboBoxAutopart.Location = new System.Drawing.Point(12, 341);
             this.comboBoxAutopart.Name = "comboBoxAutopart";
-            this.comboBoxAutopart.Size = new System.Drawing.Size(319, 36);
+            this.comboBoxAutopart.Size = new System.Drawing.Size(963, 36);
             this.comboBoxAutopart.TabIndex = 47;
             // 
             // comboBoxAutomaker
@@ -161,10 +161,10 @@
             this.listViewShop.FullRowSelect = true;
             this.listViewShop.GridLines = true;
             this.listViewShop.HideSelection = false;
-            this.listViewShop.Location = new System.Drawing.Point(365, 92);
+            this.listViewShop.Location = new System.Drawing.Point(365, 85);
             this.listViewShop.MultiSelect = false;
             this.listViewShop.Name = "listViewShop";
-            this.listViewShop.Size = new System.Drawing.Size(610, 285);
+            this.listViewShop.Size = new System.Drawing.Size(610, 237);
             this.listViewShop.TabIndex = 49;
             this.listViewShop.UseCompatibleStateImageBehavior = false;
             this.listViewShop.View = System.Windows.Forms.View.Details;
@@ -188,6 +188,10 @@
             // 
             this.columnHeader4.Text = "Запчасть";
             this.columnHeader4.Width = 138;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Цена";
             // 
             // textBoxEmail
             // 
@@ -284,7 +288,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.Color.DarkRed;
-            this.label10.Location = new System.Drawing.Point(478, 14);
+            this.label10.Location = new System.Drawing.Point(478, 11);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(335, 23);
             this.label10.TabIndex = 60;
@@ -302,10 +306,6 @@
             this.buttonBack.Text = "<";
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.ButtonBack_Click);
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Цена";
             // 
             // FormOrder
             // 
